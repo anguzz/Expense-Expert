@@ -1,8 +1,13 @@
-<h1>Welcome to my app!</h1>
+<!-- landing page without login -->
+<div class ="text-center"> 
+<h1 class = "text-4xl font-bold"> Welcome to my Expense Expert! 💰 </h1>
+
 <ul>
   {{#if currentUser}}
-    <li><a href="/{{currentUser.details.username}}">Go to your dashboard</a></li>
+    <a href="/{{currentUser.details.username}}">Go to your dashboard</a>
   {{else}}
-    <li><a href="/user/signup">Sign up for an account</a></li>
+  
+</div>
   {{/if}}
 </ul>
+</div>

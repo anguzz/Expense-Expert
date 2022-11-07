@@ -1,7 +1,31 @@
- <h1 class="text-3xl font-bold underline">
-   Welcome to my app!
-  </h1>
-  <h1 class ="text-blue-700"> Blue text! <h1> 
-<div>[[ Dynamic Remake code goes here]]</div>
-<br><br>
-<a href="https://docs.remaketheweb.com/a-simple-example-app/">Try a simple todo app</a>
+<div class ="text-center"> 
+ <h1 class="text-3xl font-bold">
+   Expense Expert! 
+<hr class="my-4 mx-auto w-400 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700">
+  <br> <br>
+
+<div object>
+  <button class= "text-3xl font-bold" new:expense>New category</button> <br> <br>
+  <div array key="allExpenses">
+    {{#for expense in expenses}}
+      <div object key:expense-name="@search">
+       <hr>
+        <div class= "text-3xl font-bold" object key:expenseType="@innerText" edit:expenseType>category 💲</div>
+        <div array key="expenseItems">
+          {{#for expenseItem in expense.expenseItems}}
+            <div object key:item-length="@search" key:item-type="@search" edit:item-length edit:item-type>
+              <div target:item-length="@innerText">{{expenseItem.itemLength}}expense name</div>
+              <div target:item-type="@innerText">{{expenseItem.itemType}}$</div> <br>
+            </div>
+          {{/for}}
+        </div>
+      <br><button new:expense-item>New item</button> <br>
+      </div>
+    {{/for}}
+  </div>
+</div>
+
+
+
+
+

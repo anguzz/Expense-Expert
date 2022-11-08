@@ -7,16 +7,18 @@
   <link rel="stylesheet" type="text/css" href="/assets/css/_remake.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 </head>
-<div class ="text-center"> 
+<div class ="text-center">
+<div class="dark:bg-slate-800 py-9 ring-1 ring-slate-900/5 shadow-xl h-full">
+
 <body>
   {{#if currentUser}}
-    <a href="/user/logout">Logout</a>
+    <a class="text-3xl font-bold text-green-300 hover:text-green-500" href="/user/logout">Logout</a>
   {{else}}
 <div class="p-8">
-    <a class="nav__button .p40" href="/user/signup">Sign up </a>  &nbsp;
-    <a class="nav__button" href="/user/login">Log in </a> &nbsp;
-    <a class="nav__button" href="/about">About</a>
-    <hr class="my-4 mx-auto w-21 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700">
+    <a class="text-3xl font-bold text-green-300 hover:text-green-500 p-21" href="/user/signup">Sign up </a>  &nbsp;
+    <a class="text-3xl font-bold text-green-300 hover:text-green-500 p-2" href="/user/login">Log in </a> &nbsp;
+    <a class="text-3xl font-bold text-green-300 hover:text-green-500 p-2" href="/about">About</a>
+   
 
     </div>
         </div>
@@ -46,4 +48,5 @@
   <script src="/assets/js/main.js"></script>
 </body>
 <div>
+  </div>
 </html>

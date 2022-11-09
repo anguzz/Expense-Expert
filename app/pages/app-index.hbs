@@ -1,5 +1,5 @@
 <div class ="text-center">  
-   <h1 class = "text-4xl font-bold text-green-300 py-4">Expense Expert!💲 </h1>
+   <h1 class = "text-4xl font-bold text-green-300 py-4 dark:bg-black">Expense Expert💲 </h1>
       <div id ="dark-wrapper" class="dark:bg-zinc-900 px-100 py-9 ring-1 ring-slate-900/5 shadow-xl h-screen">
 <div id ="dark-wrapper-new-items" class="dark:bg-zinc-900 px-100 py-9 ring-1 ring-slate-900/5 shadow-xl h-fit">
 
@@ -8,7 +8,7 @@
   <div array key="allExpenses">
     {{#for expense in expenses}}
       <div object key:expense-name="@search">
-       <hr>
+
         <div class= "text-4xl font-bold text-green-300" object key:expenseType="@innerText" edit:expenseType>category 💲</div><br>
         <div class= "text-3xl font-bold text-green-300" array key="expenseItems">
           {{#for expenseItem in expense.expenseItems}}

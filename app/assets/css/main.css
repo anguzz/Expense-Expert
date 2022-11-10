@@ -557,8 +557,19 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.inset-0 {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 
 .z-10 {
@@ -611,6 +622,10 @@ video {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-screen-xl {
@@ -743,6 +758,10 @@ video {
   padding-top: 2.5rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
 .pt-5 {
   padding-top: 1.25rem;
 }
@@ -768,11 +787,6 @@ video {
 
 .text-5xl {
   font-size: 3rem;
-  line-height: 1;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
   line-height: 1;
 }
 
@@ -858,6 +872,11 @@ video {
     margin-right: 4rem;
   }
 
+  .sm\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
   .sm\:mt-1 {
     margin-top: 0.25rem;
   }
@@ -885,22 +904,16 @@ video {
     padding-right: 1.5rem;
   }
 
+  .sm\:pt-1 {
+    padding-top: 0.25rem;
+  }
+
   .sm\:text-right {
     text-align: right;
   }
 
-  .sm\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   .sm\:text-7xl {
     font-size: 4.5rem;
-    line-height: 1;
-  }
-
-  .sm\:text-8xl {
-    font-size: 6rem;
     line-height: 1;
   }
 }

@@ -1,11 +1,10 @@
 Members
 
-- 
--Angel Santoyo
--Charlie Taylor
--Thomas Phan
-- 
-- 
+ 
+
+- Charlie Taylor
+- Angel Santoyo
+- Thomas Phan
 
 
 
